@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+     *{
+            margin: 0;
+        }
+        .header{
+            background-color: purple;
+            color: white;
+            display: flex;
+            height: 80px;
+            width: 100%;
+            justify-content: end;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .header ul{
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            list-style: none;
+        }
+        .header li:hover{
+            border-bottom: 2px solid rgb(127, 180, 4);
+            cursor: pointer;
+        }
+        .header a{
+            text-decoration: none;
+            color: white;
+        }
+        .header img{
+            width: 150px;
+        }
+        marquee{
+            font-size: 50px;
+            color: purple;
+            margin-top: 70px;
+        }
+        .About{
+            border: 1px solid rgb(192, 198, 201);
+            border-radius: 10px;
+            box-shadow: 2px 3px 8px darkslategray;
+            padding: 15px;
+            text-align: center;
+            width: 30em;
+            height: 20em;
+        }
+        .About p, h2{
+            margin-top: 30px;
+        }
+        @media (max-width:420px) {
+           .About{
+            width: 20em;
+            height: 25em;
+            margin-top: 20px;
+           }
+            }
+</style>
+<body>
+    <div class="header">
+        <img src="Logo1.png">
+        <ul>
+           <li><a href="index.html">HOME</a></li>
+           <li><a href="Contact Us.html">CONTACT US</a></li>
+        </ul>
+   </div>
+   <marquee>AL-MUBARAQ COLLECTION AND ENTERPRISES</marquee>
+   <center>
+   <div class="About">
+        <h2><u>About Us</u></h2>
+        <p>Alhamdulillah Welcome to Al-Mubarak Collection and Enterprises. Is a trusted supplier that provides you <br>
+         and your family with utmost advance flashy sales of Goods,<br>ranging from all types of Reading Glasses,medicated.</p>
+        <p>males photochromic price 8000, and females price 6000,Sunglasses, photochromic glasses, wristwaches, wall clock, wall decor, Burners and sort of Goods that are <br> 
+            available at international business<br>store at cheap and affordable price.<b>Thank you!!!</b></p>
+       </div>
+    </center>
+</body>
+</html>

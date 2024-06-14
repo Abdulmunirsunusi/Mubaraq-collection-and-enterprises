@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Al-mubaraq</title>
+    <link rel="shortcut icon" href="images/images (11).jpeg" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+        }
+        .header{
+            background-color: purple;
+            color: white;
+            display: flex;
+            height: 80px;
+            width: 100%;
+            justify-content: end;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        .header ul{
+            display: flex;
+            justify-content: space-around;
+            width: 200px;
+            list-style: none;
+        }
+        .header li:hover{
+            border-bottom: 2px solid rgb(127, 180, 4);
+            cursor: pointer;
+        }
+        .header a{
+            text-decoration: none;
+            color: white;
+        }
+        .header img{
+            width: 150px;
+        }
+        .cards{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+        .cards img{
+            width: 200px;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px black;
+        }
+        marquee{
+            font-size: 50px;
+            color: purple;
+            margin-top: 2em;
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+        }
+        .card-f img{
+            width: 80px;
+            margin-top: 20px;
+        }
+        hr{
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .img1 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img1 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img2 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img2 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img3 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img3 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img4 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img4 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img5 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img5 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img6 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img6 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img7 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img7 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img8 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img8 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img9 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img9 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img10 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img10 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img11 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img11 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        .img12 a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            position: relative;
+            bottom: 2em;
+            left: 10px;
+            border: 1px solid rgba(225, 225, 225, 0.11);
+            background-color: rgba(0, 0, 0, 0.11);
+           /* -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(8px);  */
+            padding: 10px;
+            border-radius: 15px; 
+        }
+        .img12 a:hover{
+            background-color: rgb(95, 92, 87);
+        }
+        @media (max-width:420px) {
+            .header ul{
+                width: 450px;
+            }
+            .header a{
+                font-size: 35px;
+            }
+            marquee{
+                margin-top: 2em;
+            }
+            .footer img{
+                margin-left: 10px;
+            }
+            .cards img{
+                height: 23em;    
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+         <img src="Logo1.png">
+         <ul>
+            <li><a href="About-us.html">ABOUT US</a></li>
+            <li><a href="Contact Us.html">CONTACT US</a></li>
+         </ul>
+    </div>
+    <marquee>AL-MUBARAQ COLLECTION AND ENTERPRISES</marquee>
+    <div class="cards">
+        <div class="img1"><img src="Again.jpg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>
+        <div class="img2"><img src="AGOGO.jpg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>
+        <div class="img3"><img src="download (2).jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>
+        <div class="img4"><img src="download (3).jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>
+        <div class="img5"><img src="image4.png" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+        <div class="img6"><img src="mlm.jpg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>     
+        <div class="img7"><img src="download.jpeg" alt="">  <div><a href="https://wa.link/zoiagw">Buy</a></div></div>       
+        <div class="img8"><img src="images (7).jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+        <div class="img9"><img src="images (14).jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+        <div class="img10"><img src="name.jpg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+        <div class="img11"><img src="images (2).jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+        <div class="img12"><img src="images.jpeg" alt=""> <div><a href="https://wa.link/zoiagw">Buy</a></div></div>        
+    </div>
+    <hr>
+    <div class="footer">
+      <div class="card-f card1"><img src="FOTO.png">07049183009,0904918309</div>
+      <div class="card-f card2"><img src="download (5).jpeg">DUGJA WARD BEHIND KEYSTONE BANK</div>
+      <div class="card-f card3"><img src="PICTURE1.png">AL-MUBARAQ COME ONE COME ALL</div>
+    </div>   
+</body>
+</htm1>
